@@ -1,0 +1,20 @@
+import React from "react";
+import MainQuiz from "./MainQuiz"
+
+function App() {
+  return (
+    <div className="all">
+    <div id="app" className="container-fluid">
+      <br></br>
+
+      <div className="row">
+        <button></button>
+
+        </div>
+        <br></br>
+        <br></br>
+    </div>
+    </div>
+  );
+}
+export default Face;

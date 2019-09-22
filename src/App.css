@@ -1,8 +1,18 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+.droid-arabic-kufi{font-family: 'Droid Arabic Kufi', serif;}
+
 .App {
   font-family: 'Droid Arabic Kufi', serif;
   text-align: center;
-  color: black;
-  padding-top: 30px
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color:lightslategray;
+}
+
+html, body, #root{
+
+  background-color:lightslategray;
 }
 body {
   font-size: 1.2rem;
@@ -13,27 +23,31 @@ body {
     #2c3e50,
     #bdc3c7
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background:white;
+  background-color:lightslategray;
   background-size: 20pc;
-  padding-bottom: 30px;
+  
    
 }
 
 .result {
   margin-top: 20px;
+  margin-bottom: 10%;
 }
 
 .options {
   cursor: pointer;
-  border: 4px solid black;
-  padding: 10px;
+  border: 4px solid white;
+  padding: 3px;
+
 
 }
 
 .selected {
-  background: linear-gradient(to right, #6ea1df, #071b77) !important;
+  background: linear-gradient(to right, #dcd73d, #d0ac1c) !important;
 }
 
 ul {
   list-style-type: none;
+  padding-top: 4px;
+
 }

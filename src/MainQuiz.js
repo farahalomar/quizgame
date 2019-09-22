@@ -6,7 +6,7 @@ class MainQuiz extends React.Component {
     currentQuestion: 0,
     myAnswer: null,
     options: [],
-    score: 0,
+    score: 1,
     disabled: true,
     isEnd: false
   };
@@ -65,6 +65,9 @@ class MainQuiz extends React.Component {
       });
     }
   };
+  refreshpage(){
+    window.location.reload()
+  }
   render() {
    
     
@@ -85,21 +88,22 @@ class MainQuiz extends React.Component {
               ))}
             </ul>
           </p>
+          <input type="button" value="مرة أخرى" onClick={this.refreshpage}></input>
         </div>
       );
     } else {
       return (
-        
         <div className="App">
           <h1>{this.state.questions} </h1>
-          <span>{`السؤال  ${currentQuestion} من أصل ${Data.length -
-            1}  `}</span>
+          <span>{`السؤال  ${currentQuestion+1} من أصل ${Data.length}  `}</span>
           {options.map(option => (
+            
             <p
               key={option.id}
               className={`ui floating message options
          ${myAnswer === option ? "selected" : null}
          `}
+
               onClick={() => this.checkAnswer(option)}
             >
               {option}
